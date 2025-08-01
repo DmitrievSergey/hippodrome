@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -18,9 +19,7 @@ public class Hippodrome {
         this.horses = horses;
     }
 
-    public List<Horse> getHorses() {
-        return Collections.unmodifiableList(horses);
-    }
+    public List<Horse> getHorses() { return Collections.unmodifiableList(horses); }
 
     public void move() {
         horses.forEach(Horse::move);
